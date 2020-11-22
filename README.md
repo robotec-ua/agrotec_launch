@@ -13,9 +13,9 @@ This is the package dedicated to start all the system of Robotec packages. All t
 ├── launch
 │   ├── agrotec_launch
 │   │   └── agrotec_launch.launch
-│   ├── move_basic
-│   │   └── move_basic.launch
 │   ├── pid
+│   ├── robotec_move_basic
+│   │   └── robotec_move_basic.launch
 │   ├── robotec_mrcnn
 │   │   └── robotec_mrcnn.launch
 │   ├── robotec_odom_publisher
@@ -45,10 +45,8 @@ This is the package dedicated to start all the system of Robotec packages. All t
 ```
 
 ### Folders
-* `include` : C/C++ Headers and ROS Messages/Services
-* `msg` : ROS messages files
-* `scripts` : miscellaneous scripts needed by the project 
-* `srv` : ROS services files
+* `launch` : ROS launch files
+* `param` : Configuration parameters files
 
 ### Files
 * `CHANGELOG.md` : the file where the changes to the project are desribed
