@@ -10,16 +10,22 @@ This is the package dedicated to start all the system of Robotec packages. All t
 ## Project structure
 ```
 .
+├── config
+│   └── robotec_velocity_controller
+│       └── diff_drive_controller.yaml
 ├── launch
 │   ├── agrotec_launch
 │   │   └── agrotec_launch.launch
 │   ├── pid
+│   │   └── pid.launch
 │   ├── robotec_move_basic
 │   │   └── robotec_move_basic.launch
 │   ├── robotec_mrcnn
 │   │   └── robotec_mrcnn.launch
 │   ├── robotec_odom_publisher
 │   │   └── robotec_odom_publisher.launch
+│   ├── robotec_velocity_controller
+│   │   └── robotec_velocity_controller.launch
 │   ├── robot_localization
 │   │   └── robot_localization.launch
 │   ├── robot_pose_publisher
@@ -46,7 +52,8 @@ This is the package dedicated to start all the system of Robotec packages. All t
 
 ### Folders
 * `launch` : ROS launch files
-* `param` : Configuration parameters files
+* `param` : configuration parameters files
+* `config` : configuration files of packages
 
 ### Files
 * `CHANGELOG.md` : the file where the changes to the project are desribed
@@ -55,6 +62,7 @@ This is the package dedicated to start all the system of Robotec packages. All t
 * `launch/<package_name>/<package_name>.launch` : launching <package_name> with desired parameters
 * `param/<package_name>/<package_name>.yaml` : desired parameters for <package_name>
 * `imu_calibration.yaml` : calibration parameters for the IMU, used in Robotec products (MPU9250)
+* `diff_drive_controller.yaml` : configuration file for diff_drive_controller (part of ros_controllers)  
 
 ## Usage
 Everything you need to start the whole robot is to run the command :
