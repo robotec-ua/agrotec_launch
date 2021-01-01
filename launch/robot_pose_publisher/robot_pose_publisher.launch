@@ -7,6 +7,6 @@
 <launch>
     <node pkg="robot_pose_publisher" name="robot_pose_publisher" type="robot_pose_publisher" respawn="false" output="screen">
        <param name="base_frame" value="base_footprint"/>
-       <param naeme="map_frame" value="map"/>
+       <param name="map_frame" value="map"/>
     </node>
 </launch>
